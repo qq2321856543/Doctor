@@ -26,4 +26,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':home')
+    implementation project(':inquiry')
+    implementation project(':login')
+    implementation project(':myinfo')
+    implementation project(':news')
+    implementation project(':patient')
+    implementation project(':wallet')
 }

@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':common', ':component', ':login', ':home', ':news', ':inquiry', ':wallet', ':myinfo', ':patient'
