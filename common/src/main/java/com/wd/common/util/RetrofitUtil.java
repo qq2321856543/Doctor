@@ -112,17 +112,7 @@ public class RetrofitUtil {
 
         return builder.build();
     }
-   public RequestBody getBody(List<File> files,HashMap<String,String> map){
-       MultipartBody.Builder builder = new MultipartBody.Builder().setType(MultipartBody.FORM);
-       for (Map.Entry<String,String> entry:map.entrySet()){
-            builder.addFormDataPart(entry.getKey(),entry.getValue());
-        }
-       for (int i = 0; i < files.size(); i++) {
-           builder.addFormDataPart("image",files.get(i).getName(),RequestBody.create(MediaType.parse("image/jepg"),files.get(i)));
-       }
 
-       return builder.build();
-   }
 
 
 }
