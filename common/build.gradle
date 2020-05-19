@@ -13,7 +13,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -41,41 +45,41 @@ dependencies {
 
     //项目依赖
     //图片
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    implementation 'com.facebook.fresco:fresco:1.12.1'
+    api 'com.github.bumptech.glide:glide:4.9.0'
+    api 'com.facebook.fresco:fresco:1.12.1'
     //无限轮播
-    //implementation 'com.github.xiaohaibin:XBanner:1.7.0'
+    api 'com.github.xiaohaibin:XBanner:1.7.0'
     //TabLayout
-    implementation'com.android.support:design:28.0.0'
+    api'com.android.support:design:28.0.0'
     //recyclerview X
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'com.jcodecraeer:xrecyclerview:1.5.9'
     //zxing ok依赖 ok 日志的拦截器
-    implementation 'cn.yipianfengye.android:zxing-library:2.2'
-    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+    api 'cn.yipianfengye.android:zxing-library:2.2'
+    api 'com.squareup.okhttp3:okhttp:3.2.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.12.0'
     //butterknife
-    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    api 'com.jakewharton:butterknife:9.0.0-rc1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
     //eventbus
-    implementation 'org.greenrobot:eventbus:3.1.1'
+    api 'org.greenrobot:eventbus:3.1.1'
 
     //retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'//导入retrofit
-    implementation 'com.google.code.gson:gson:2.6.2'//Gson 库
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
-    implementation 'io.reactivex.rxjava2:rxjava:2.x.y'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'//转换器，请求结果转换成Model
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'//配合Rxjava 使用
+    api 'com.squareup.retrofit2:retrofit:2.3.0'//导入retrofit
+    api 'com.google.code.gson:gson:2.6.2'//Gson 库
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    api 'io.reactivex.rxjava2:rxjava:2.x.y'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'//转换器，请求结果转换成Model
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'//配合Rxjava 使用
 
     //沉浸式
-    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    api 'com.jaeger.statusbarutil:library:1.5.1'
     //调相机
-    implementation 'com.github.wildma:PictureSelector:1.1.1'
+    api 'com.github.wildma:PictureSelector:1.1.1'
 
     //导入GreenDao依赖
-    implementation 'org.greenrobot:greendao:3.2.2'
+    api 'org.greenrobot:greendao:3.2.2'
     //arouter
-//    api 'com.alibaba:arouter-api:1.4.1'
-//    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 }

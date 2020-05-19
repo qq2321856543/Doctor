@@ -7,8 +7,8 @@ import android.text.TextUtils;
 import android.util.Log;
 
 
-import com.wd.common.base.Apis;
-import com.wd.common.base.BaseApplication;
+import com.wd.common.Base.Apis;
+import com.wd.common.Base.BaseApplication;
 
 import java.io.File;
 import java.io.IOException;
