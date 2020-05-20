@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -34,4 +35,6 @@ dependencies {
     implementation project(':news')
     implementation project(':patient')
     implementation project(':wallet')
+    //兼容
+    implementation 'com.android.support:multidex:1.0.3'
 }
