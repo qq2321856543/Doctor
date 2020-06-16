@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CreateConversationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/single_cs_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="对方用户名" />
+
+        <Button
+            android:id="@+id/create_single_cs_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建单聊对话" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/create_group_name_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="群名" />
+
+        <EditText
+            android:id="@+id/create_group_desc_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="群简介" />
+
+        <Button
+            android:id="@+id/create_group_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建群" />
+    </LinearLayout>
+
+</LinearLayout>

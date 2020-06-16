@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conversationBg"
+    tools:context=".view.ConversationDetailActivity">
+
+    <TextView
+        android:id="@+id/cs_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/headLayoutBg"
+        android:gravity="center"
+        android:text="xxx"
+        android:textColor="@color/left"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/list_view_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_message_layout"
+        android:layout_below="@+id/cs_title_name"
+        android:divider="@null"
+        android:dividerHeight="6dp" />
+
+    <RelativeLayout
+        android:id="@+id/edit_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/message_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/message_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+    </RelativeLayout>
+
+</RelativeLayout>
